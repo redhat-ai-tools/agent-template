@@ -17,12 +17,10 @@ spec:
     spec:
       containers:
       - name: monitor-agent
-        image: quay.io/eranco74/agent:10
+        image: quay.io/eranco74/agent:latest
         env:
         - name: REMOTE_BASE_URL
           value: "http://llamastack-server:8321"
-        - name: NAMESPACE
-          value: "default"
         - name: TEMPERATURE
           value: "0.0"
         - name: TOP_P
